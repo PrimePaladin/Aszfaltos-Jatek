@@ -1,0 +1,16 @@
+.a{
+    float: left;
+    background-image:none;
+
+}
+.c{
+    float:right
+}
+.b{
+    float: unset;
+    width: 200px;
+}
+t{
+    width: 1200px ;
+    height: 1200px;
+}

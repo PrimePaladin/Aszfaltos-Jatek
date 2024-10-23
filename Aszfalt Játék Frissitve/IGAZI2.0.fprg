@@ -1,0 +1,815 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="IGAZI2"/>
+        <attribute name="authors" value="lenne"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-23 02:50:34 du."/>
+        <attribute name="created" value="bGVubmU7REVTS1RPUC03TUM3RVBTOzIwMjQtMTAtMjI7MDQ6NTQ6MDcgZGUuOzI5NjY="/>
+        <attribute name="edited" value="bGVubmU7REVTS1RPUC03TUM3RVBTOzIwMjQtMTAtMjM7MTE6NTI6MjEgZGUuOzI4O2xlbm5lO0RFU0tUT1AtN01DN0VQUzsyMDI0LTEwLTIzOzEwOjQ4OjA1IGRlLjtLw7NkZMOzcy5mcHJnOzc1NjA="/>
+        <attribute name="edited" value="bGVubmU7REVTS1RPUC03TUM3RVBTOzIwMjQtMTAtMjM7MTI6MTE6MDQgZHUuOzM7bGVubmU7REVTS1RPUC03TUM3RVBTOzIwMjQtMTAtMjM7MTE6NTY6NTcgZGUuO0VsZWplLmZwcmc7NzEzNA=="/>
+        <attribute name="edited" value="bGVubmU7REVTS1RPUC03TUM3RVBTOzIwMjQtMTAtMjM7MDI6NDg6MTcgZHUuOzE3O2xlbm5lO0RFU0tUT1AtN01DN0VQUzsyMDI0LTEwLTIzOzAyOjI4OjU2IGR1LjtJZMWRLmZwcmc7NzIzOQ=="/>
+        <attribute name="edited" value="bGVubmU7REVTS1RPUC03TUM3RVBTOzIwMjQtMTAtMjM7MDI6NTA6MzQgZHUuOzM1OzMxNDA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Kedves j&#225;t&#233;kos t&#233;ged bez&#225;rtak ebbe a szob&#225;ba a c&#233;l hogy ki tudj&#225;l jutni a megadott id&#337; alatt/a megadott k&#243;d segits&#233;g&#233;vel ehhez! V&#233;gezd el az 1. feladatoddat hogy kitudj jutni!&quot;" newline="True"/>
+            <output expression="&quot;Kapt&#225;l egy random sz&#225;mot 0-4k&#246;z&#246;tt!&quot;" newline="True"/>
+            <declare name="penzfeldobas" type="Integer" array="False" size=""/>
+            <assign variable="penzfeldobas" expression="random(5)"/>
+            <comment text="Random gener&#225;l 0 &#233;s 4 k&#246;z&#246;tt egy sz&#225;mot"/>
+            <input variable="penzfeldobas"/>
+            <if expression="penzfeldobas=4">
+                <then>
+                    <output expression="&quot;Egy kis mozg&#225;s sohase &#225;rt: Csin&#225;lj 2 b&#225;rmilyen feladatb&#243;l 5-&#246;t, amihez az adott mez&#337;ben eltudsz v&#233;gezni &quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="penzfeldobas=3">
+                        <then>
+                            <output expression="&quot;K&#233;pzeletbeli t&#225;rgy:&#8239;Tal&#225;lj ki egy t&#225;rgyat, &#233;s mondj r&#243;la egy r&#246;vid le&#237;r&#225;st (pl: mekkora, hol kaphat&#243;, mire haszn&#225;lhat&#243; stb.)&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="penzfeldobas=2">
+                                <then>
+                                    <output expression="&quot;A helyes eml&#233;kez&#233;s: &#193;ll&#237;tsd sorba a mondott szavakat el&#337;sz&#337;r 3, ut&#225;na 4, legutolj&#225;ra 5 sz&#243;.&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="penzfeldobas=1">
+                                        <then>
+                                            <output expression="&quot;T&#225;rgyak azonos&#237;t&#225;sa:&#8239;Tapints le 2 k&#252;l&#246;nb&#246;z&#337; t&#225;rgyat, &#233;s mondd el, mi az a t&#225;rgy.&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="penzfeldobas=0">
+                                                <then>
+                                                    <output expression="&quot;Tal&#225;l&#243;s k&#233;rd&#233;st:&#8239;V&#225;laszolj helyesen a sz&#243;ban adott tal&#225;l&#243;s k&#233;rd&#233;sre.&quot;" newline="True"/>
+                                                </then>
+                                                <else/>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Ha j&#243; v&#225;laszt ad meg akkor 3-mast &#237;rj&#225;l, ha rossz v&#225;laszt ad meg az illet&#337; 2-est &#237;rjon.&quot;" newline="True"/>
+            <declare name="penzfeldobas001" type="Integer" array="False" size=""/>
+            <input variable="penzfeldobas"/>
+            <if expression="penzfeldobas=3">
+                <then>
+                    <output expression="&quot;Helyes v&#225;lasz kapsz 1 bet&#252;t!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Rossz v&#225;lasz nem kapsz bet&#252;t!&quot;" newline="True"/>
+                </else>
+            </if>
+            <output expression="&quot;Fej vagy &#205;r&#225;s?&quot;" newline="True"/>
+            <declare name="penzfeldobas0" type="Integer" array="False" size=""/>
+            <input variable="penzfeldobas"/>
+            <if expression="penzfeldobas=3">
+                <then>
+                    <output expression="&quot;L&#233;pj 3-mat!&quot;" newline="True"/>
+                    <output expression="&quot;Fej vagy &#205;r&#225;s?&quot;" newline="True"/>
+                    <declare name="szam3" type="Integer" array="False" size=""/>
+                    <input variable="szam3"/>
+                    <if expression="szam3=3">
+                        <then>
+                            <output expression="&quot;L&#233;pj 2-&#246;t annak ellen&#233;re 3-mat kapt&#225;l!&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;L&#233;pj 3-mat &#233;s teljes&#237;tsd a feladatot!&quot;" newline="True"/>
+                        </else>
+                    </if>
+                    <output expression="&quot;Ha j&#243; v&#225;laszt ad meg akkor 3-mast &#237;rj&#225;l, ha rossz v&#225;laszt ad meg az illet&#337; 2-est &#237;rjon.&quot;" newline="True"/>
+                    <output expression="&quot;V&#225;lasz 0 &#233;s 3 k&#246;z&#246;tt&quot;" newline="True"/>
+                    <declare name="penzfeldobas2" type="Integer" array="False" size=""/>
+                    <input variable="penzfeldobas"/>
+                    <if expression="penzfeldobas=3">
+                        <then>
+                            <output expression="&quot;Helyes v&#225;lasz kapsz 1 bet&#252;t!&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Rossz v&#225;lasz nem kapsz bet&#252;t!&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;L&#233;pj 2-&#246;t!&quot;" newline="True"/>
+                    <output expression="&quot;Fej vagy &#205;r&#225;s?&quot;" newline="True"/>
+                    <declare name="szam2" type="Integer" array="False" size=""/>
+                    <input variable="szam2"/>
+                    <if expression="szam2=3">
+                        <then>
+                            <output expression="&quot;L&#233;pj 3-mat &#233;s teljes&#237;tsd a feladatot!&quot;" newline="True"/>
+                            <output expression="&quot;Ha j&#243; v&#225;laszt ad meg akkor 3-mast &#237;rj&#225;l, ha rossz v&#225;laszt ad meg az illet&#337; 2-est &#237;rjon.&quot;" newline="True"/>
+                            <output expression="&quot;V&#225;lasz 0 &#233;s 3 k&#246;z&#246;tt&quot;" newline="True"/>
+                            <declare name="penzfeldobas1" type="Integer" array="False" size=""/>
+                            <input variable="penzfeldobas"/>
+                            <if expression="penzfeldobas=3">
+                                <then>
+                                    <output expression="&quot;Helyes v&#225;lasz kapsz 1 bet&#252;t!&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Rossz v&#225;lasz nem kapsz bet&#252;t!&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;L&#233;pj 2-&#246;t!&quot;" newline="True"/>
+                            <output expression="&quot;Fej vagy &#205;r&#225;s?&quot;" newline="True"/>
+                            <declare name="szam1" type="Integer" array="False" size=""/>
+                            <input variable="szam1"/>
+                            <if expression="szam1=3">
+                                <then>
+                                    <output expression="&quot;L&#233;pj 1-et annak ellen&#233;re hogy 3-mat kapt&#225;l &#233;s teljes&#237;tsd a feladatott!&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;L&#233;pj 1-et annak ellen&#233;re hogy 2-&#246;t kapt&#225;l &#233;s teljes&#237;tsd a feladatot!&quot;" newline="True"/>
+                                </else>
+                            </if>
+                            <output expression="&quot;V&#225;lasz 0 &#233;s 3 k&#246;z&#246;tt&quot;" newline="True"/>
+                            <output expression="&quot;Ha j&#243; v&#225;laszt ad meg akkor 3-mast &#237;rj&#225;l, ha rossz v&#225;laszt ad meg az illet&#337; 2-est &#237;rjon.&quot;" newline="True"/>
+                            <declare name="penzfeldobas3" type="Integer" array="False" size=""/>
+                            <input variable="penzfeldobas"/>
+                            <if expression="penzfeldobas=3">
+                                <then>
+                                    <output expression="&quot;Helyes v&#225;lasz kapsz 1 bet&#252;t!&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Rossz v&#225;lasz nem kapsz bet&#252;t!&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Fej vagy &#205;r&#225;s?&quot;" newline="True"/>
+            <declare name="penzfeldobas4" type="Integer" array="False" size=""/>
+            <input variable="penzfeldobas"/>
+            <if expression="penzfeldobas=3">
+                <then>
+                    <output expression="&quot;L&#233;pj 3-mat!&quot;" newline="True"/>
+                    <output expression="&quot;Fej vagy &#205;r&#225;s?&quot;" newline="True"/>
+                    <declare name="penzfeldobas6" type="Integer" array="False" size=""/>
+                    <input variable="penzfeldobas"/>
+                    <if expression="penzfeldobas=3">
+                        <then>
+                            <output expression="&quot;L&#233;pj 3-mat!&quot;" newline="True"/>
+                            <output expression="&quot;Fej vagy &#205;r&#225;s?&quot;" newline="True"/>
+                            <declare name="szam10" type="Integer" array="False" size=""/>
+                            <input variable="szam10"/>
+                            <if expression="szam10=3">
+                                <then>
+                                    <output expression="&quot;L&#233;pj 2-&#246;t annak ellen&#233;re hogy 3-mat kapt&#225;l &#233;s teljesitsd a feladatot!&quot;" newline="True"/>
+                                    <output expression="&quot;V&#225;lasz 0 &#233;s 2 k&#246;z&#246;tt&quot;" newline="True"/>
+                                    <output expression="&quot;Ha j&#243; v&#225;laszt ad meg akkor 3-mast &#237;rj&#225;l, ha rossz v&#225;laszt ad meg az illet&#337; 2-est &#237;rjon.&quot;" newline="True"/>
+                                    <declare name="penzfeldobas17" type="Integer" array="False" size=""/>
+                                    <input variable="penzfeldobas"/>
+                                    <if expression="penzfeldobas=3">
+                                        <then>
+                                            <output expression="&quot;Helyes v&#225;lasz kapsz 1 bet&#252;t!&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Rossz v&#225;lasz nem kapsz bet&#252;t!&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <output expression="&quot;L&#233;pj 2-&#246;t &#233;s teljes&#237;tsd a feladatot!&quot;" newline="True"/>
+                                    <output expression="&quot;V&#225;lasz 0 &#233;s 2 k&#246;z&#246;tt&quot;" newline="True"/>
+                                    <output expression="&quot;Ha j&#243; v&#225;laszt ad meg akkor 3-mast &#237;rj&#225;l, ha rossz v&#225;laszt ad meg az illet&#337; 2-est &#237;rjon.&quot;" newline="True"/>
+                                    <declare name="penzfeldobas18" type="Integer" array="False" size=""/>
+                                    <input variable="penzfeldobas"/>
+                                    <if expression="penzfeldobas=3">
+                                        <then>
+                                            <output expression="&quot;Helyes v&#225;lasz kapsz 1 bet&#252;t!&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Rossz v&#225;lasz nem kapsz bet&#252;t!&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;L&#233;pj 2-&#246;t!&quot;" newline="True"/>
+                            <output expression="&quot;Fej vagy &#205;r&#225;s?&quot;" newline="True"/>
+                            <declare name="szam9" type="Integer" array="False" size=""/>
+                            <input variable="szam9"/>
+                            <if expression="szam9=3">
+                                <then>
+                                    <output expression="&quot;L&#233;pj 3-mat &#233;s teljesitsd a feladatot!&quot;" newline="True"/>
+                                    <output expression="&quot;V&#225;lasz 0 &#233;s 2 k&#246;z&#246;tt&quot;" newline="True"/>
+                                    <output expression="&quot;Ha j&#243; v&#225;laszt ad meg akkor 3-mast &#237;rj&#225;l, ha rossz v&#225;laszt ad meg az illet&#337; 2-est &#237;rjon.&quot;" newline="True"/>
+                                    <declare name="penzfeldobas9" type="Integer" array="False" size=""/>
+                                    <input variable="penzfeldobas"/>
+                                    <if expression="penzfeldobas=3">
+                                        <then>
+                                            <output expression="&quot;Helyes v&#225;lasz kapsz 1 bet&#252;t!&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Rossz v&#225;lasz nem kapsz bet&#252;t!&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <output expression="&quot;L&#233;pj 2-&#246;t!&quot;" newline="True"/>
+                                    <output expression="&quot;Fej vagy &#205;r&#225;s?&quot;" newline="True"/>
+                                    <declare name="szam8" type="Integer" array="False" size=""/>
+                                    <input variable="szam8"/>
+                                    <if expression="szam8=3">
+                                        <then>
+                                            <output expression="&quot;L&#233;pj 1-et annak ellen&#233;re hogy 3-mat kapt&#225;l &#233;s teljes&#237;tsd a feladatot!&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;L&#233;pj 1 annak ellen&#233;re hogy 2-&#246;t kapt&#225;l &#233;s teljes&#237;tsd a feladatot!&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                    <output expression="&quot;V&#225;lasz 0 &#233;s 2 k&#246;z&#246;tt&quot;" newline="True"/>
+                                    <output expression="&quot;Ha j&#243; v&#225;laszt ad meg akkor 3-mast &#237;rj&#225;l, ha rossz v&#225;laszt ad meg az illet&#337; 2-est &#237;rjon.&quot;" newline="True"/>
+                                    <declare name="penzfeldobas16" type="Integer" array="False" size=""/>
+                                    <input variable="penzfeldobas"/>
+                                    <if expression="penzfeldobas=3">
+                                        <then>
+                                            <output expression="&quot;Helyes v&#225;lasz kapsz 1 bet&#252;t!&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Rossz v&#225;lasz nem kapsz bet&#252;t!&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;L&#233;pj 2-&#246;t!&quot;" newline="True"/>
+                    <output expression="&quot;Fej vagy &#205;r&#225;s?&quot;" newline="True"/>
+                    <declare name="penzfeldobas5" type="Integer" array="False" size=""/>
+                    <input variable="penzfeldobas"/>
+                    <if expression="penzfeldobas=3">
+                        <then>
+                            <output expression="&quot;L&#233;pj 3-mat!&quot;" newline="True"/>
+                            <output expression="&quot;Fej vagy &#205;r&#225;s?&quot;" newline="True"/>
+                            <declare name="penzfeldobas8" type="Integer" array="False" size=""/>
+                            <input variable="penzfeldobas"/>
+                            <if expression="penzfeldobas=3">
+                                <then>
+                                    <output expression="&quot;L&#233;pj 3-mat!&quot;" newline="True"/>
+                                    <output expression="&quot;Fej vagy &#205;r&#225;s?&quot;" newline="True"/>
+                                    <declare name="szam7" type="Integer" array="False" size=""/>
+                                    <input variable="szam7"/>
+                                    <if expression="szam7=3">
+                                        <then>
+                                            <output expression="&quot;L&#233;pj 2-&#246;t annak ellen&#233;re hogy 3-mat kapt&#225;l!&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;L&#233;pj 2-&#246;t &#233;s teljes&#237;tsd a feladatot!&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                    <output expression="&quot;V&#225;lasz 0 &#233;s 2 k&#246;z&#246;tt&quot;" newline="False"/>
+                                    <output expression="&quot;Ha j&#243; v&#225;laszt ad meg akkor 3-mast &#237;rj&#225;l, ha rossz v&#225;laszt ad meg az illet&#337; 2-est &#237;rjon.&quot;" newline="True"/>
+                                    <declare name="penzfeldobas15" type="Integer" array="False" size=""/>
+                                    <input variable="penzfeldobas"/>
+                                    <if expression="penzfeldobas=3">
+                                        <then>
+                                            <output expression="&quot;Helyes v&#225;lasz kapsz 1 bet&#252;t!&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Rossz v&#225;lasz nem kapsz bet&#252;t!&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <output expression="&quot;L&#233;pj 2-&#246;t!&quot;" newline="True"/>
+                                    <output expression="&quot;Fej vagy &#205;r&#225;s?&quot;" newline="True"/>
+                                    <declare name="szam6" type="Real" array="False" size=""/>
+                                    <input variable="szam6"/>
+                                    <if expression="szam6=3">
+                                        <then>
+                                            <output expression="&quot;L&#233;pj 1-et annak ellen&#233;re hogy 3-mat kapt&#225;l &#233;s teljes&#237;tsd a feladatot!&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;L&#233;pj 1 annak ellen&#233;re hogy 2-&#246;t kapt&#225;l &#233;s teljes&#237;tsd a feladatot!&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                    <output expression="&quot;V&#225;lasz 0 &#233;s 2 k&#246;z&#246;tt&quot;" newline="True"/>
+                                    <output expression="&quot;Ha j&#243; v&#225;laszt ad meg akkor 3-mast &#237;rj&#225;l, ha rossz v&#225;laszt ad meg az illet&#337; 2-est &#237;rjon.&quot;" newline="True"/>
+                                    <declare name="penzfeldobas14" type="Boolean" array="False" size=""/>
+                                    <input variable="penzfeldobas"/>
+                                    <if expression="penzfeldobas=3">
+                                        <then>
+                                            <output expression="&quot;Helyes v&#225;lasz kapsz 1 bet&#252;t!&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Rossz v&#225;lasz nem kapsz bet&#252;t!&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;L&#233;pj 2-&#246;t!&quot;" newline="True"/>
+                            <output expression="&quot;Fej vagy &#205;r&#225;s?&quot;" newline="True"/>
+                            <declare name="penzfeldobas7" type="Integer" array="False" size=""/>
+                            <input variable="penzfeldobas"/>
+                            <if expression="penzfeldobas=3">
+                                <then>
+                                    <output expression="&quot;L&#233;pj 3-mat!&quot;" newline="True"/>
+                                    <output expression="&quot;Fej vagy &#205;r&#225;s?&quot;" newline="True"/>
+                                    <declare name="szam5" type="Integer" array="False" size=""/>
+                                    <input variable="szam5"/>
+                                    <if expression="szam5=3">
+                                        <then>
+                                            <output expression="&quot;L&#233;pj 1-et annak ellen&#233;re hogy 3-mat kapt&#225;l &#233;s teljes&#237;tsd a feladatot!&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;L&#233;pj 1 annak ellen&#233;re hogy 2-&#246;t kapt&#225;l &#233;s teljes&#237;tsd a feladatot!&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                    <output expression="&quot;Ha j&#243; v&#225;laszt ad meg akkor 3-mast &#237;rj&#225;l, ha rossz v&#225;laszt ad meg az illet&#337; 2-est &#237;rjon.&quot;" newline="True"/>
+                                    <declare name="penzfeldobas13" type="Integer" array="False" size=""/>
+                                    <input variable="penzfeldobas"/>
+                                    <if expression="penzfeldobas=3">
+                                        <then>
+                                            <output expression="&quot;Helyes v&#225;lasz kapsz 1 bet&#252;t!&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Rossz v&#225;lasz nem kapsz bet&#252;t!&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <output expression="&quot;L&#233;pj 2-&#246;t!&quot;" newline="True"/>
+                                    <output expression="&quot;Fej vagy &#205;r&#225;s?&quot;" newline="True"/>
+                                    <declare name="szam4" type="Integer" array="False" size=""/>
+                                    <input variable="szam4"/>
+                                    <if expression="szam4=3">
+                                        <then>
+                                            <output expression="&quot;L&#233;pj 2-&#246;t annak ellen&#233;re hogy 3-mat kapt&#225;l &#233;s teljes&#237;tsd a feladatot!&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;L&#233;pj 2-&#246;t &#233;s teljes&#237;tsd a feladatot!&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                    <output expression="&quot;Ha j&#243; v&#225;laszt ad meg akkor 3-mast &#237;rj&#225;l, ha rossz v&#225;laszt ad meg az illet&#337; 2-est &#237;rjon.&quot;" newline="True"/>
+                                    <declare name="penzfeldobas12" type="Integer" array="False" size=""/>
+                                    <input variable="penzfeldobas"/>
+                                    <if expression="penzfeldobas=3">
+                                        <then>
+                                            <output expression="&quot;Helyes v&#225;lasz kapsz 1 bet&#252;t!&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Rossz v&#225;lasz nem kapsz bet&#252;t!&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Lej&#225;rt az id&#337;?&quot;" newline="True"/>
+            <declare name="ido2, ido3" type="Integer" array="False" size=""/>
+            <assign variable="ido3" expression="10"/>
+            <input variable="ido2"/>
+            <if expression="ido2&lt;ido3">
+                <then>
+                    <output expression="&quot;Tov&#225;bbi sok sikert!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <do expression="ido2&lt;=ido3">
+                        <input variable="ido3"/>
+                        <output expression="&quot;K&#225;r az id&#337; lej&#225;rt nem mehetsz tov&#225;bb bent ragadt&#225;l &#246;r&#246;kre.VESZTETT&#201;L!!&quot;" newline="True"/>
+                    </do>
+                    <breakpoint expression="" always="True"/>
+                </else>
+            </if>
+            <output expression="&quot;Fej vagy &#205;r&#225;s?&quot;" newline="True"/>
+            <declare name="penzfeldobas18" type="Integer" array="False" size=""/>
+            <input variable="penzfeldobas"/>
+            <if expression="penzfeldobas=3">
+                <then>
+                    <output expression="&quot;L&#233;pj 3-mat!&quot;" newline="True"/>
+                    <output expression="&quot;Fej vagy &#205;r&#225;s?&quot;" newline="True"/>
+                    <declare name="szam11" type="Integer" array="False" size=""/>
+                    <input variable="szam11"/>
+                    <if expression="penzfeldobas=3">
+                        <then>
+                            <output expression="&quot;L&#233;pj 2-&#246;t annak ellen&#233;re hogy 3-mat kapt&#225;l!&quot;" newline="True"/>
+                            <output expression="&quot;V&#225;lasz 0 &#233;s 1 k&#246;z&#246;tt&quot;" newline="True"/>
+                            <output expression="&quot;Ha j&#243; v&#225;laszt ad meg akkor 3-mast &#237;rj&#225;l, ha rossz v&#225;laszt ad meg az illet&#337; 2-est &#237;rjon.&quot;" newline="True"/>
+                            <declare name="penzfeldobas20" type="Integer" array="False" size=""/>
+                            <input variable="penzfeldobas"/>
+                            <if expression="penzfeldobas=3">
+                                <then>
+                                    <output expression="&quot;Helyes v&#225;lasz kapsz 1 bet&#252;t!&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Rossz v&#225;lasz nem kapsz bet&#252;t!&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;L&#233;pj 2-&#246;t!&quot;" newline="True"/>
+                            <output expression="&quot;Fej vagy &#205;r&#225;s?&quot;" newline="True"/>
+                            <declare name="szam13" type="Integer" array="False" size=""/>
+                            <input variable="szam13"/>
+                            <if expression="szam13=3">
+                                <then>
+                                    <output expression="&quot;L&#233;pj 1-et annak ellen&#233;re hogy 3-mat kapt&#225;l &#233;s teljes&#237;tsd a feladatot!&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;L&#233;pj 1 annak ellen&#233;re hogy 2-&#246;t kapt&#225;l &#233;s teljes&#237;tsd a feladatot!&quot;" newline="True"/>
+                                </else>
+                            </if>
+                            <output expression="&quot;V&#225;lasz 0 &#233;s 1 k&#246;z&#246;tt&quot;" newline="True"/>
+                            <output expression="&quot;Ha j&#243; v&#225;laszt ad meg akkor 3-mast &#237;rj&#225;l, ha rossz v&#225;laszt ad meg az illet&#337; 2-est &#237;rjon.&quot;" newline="True"/>
+                            <declare name="penzfeldobas22" type="Integer" array="False" size=""/>
+                            <input variable="penzfeldobas"/>
+                            <if expression="penzfeldobas=3">
+                                <then>
+                                    <output expression="&quot;Helyes v&#225;lasz kapsz 1 bet&#252;t!&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Rossz v&#225;lasz nem kapsz bet&#252;t!&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;L&#233;pj 2-&#246;t!&quot;" newline="True"/>
+                    <output expression="&quot;Fej vagy &#205;r&#225;s?&quot;" newline="True"/>
+                    <declare name="szam10" type="Integer" array="False" size=""/>
+                    <input variable="szam10"/>
+                    <if expression="szam10=3">
+                        <then>
+                            <output expression="&quot;L&#233;pj 3-mat &#233;s teljes&#237;tsd a feladatot!&quot;" newline="True"/>
+                            <output expression="&quot;Ha j&#243; v&#225;laszt ad meg akkor 3-mast &#237;rj&#225;l, ha rossz v&#225;laszt ad meg az illet&#337; 2-est &#237;rjon.&quot;" newline="True"/>
+                            <output expression="&quot;V&#225;lasz 0 &#233;s 1 k&#246;z&#246;tt&quot;" newline="True"/>
+                            <declare name="penzfeldobas19" type="Integer" array="False" size=""/>
+                            <input variable="penzfeldobas"/>
+                            <if expression="penzfeldobas=3">
+                                <then>
+                                    <output expression="&quot;Helyes v&#225;lasz kapsz 1 bet&#252;t!&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Rossz v&#225;lasz nem kapsz bet&#252;t!&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;L&#233;pj 2-&#246;t!&quot;" newline="True"/>
+                            <declare name="szam12" type="Integer" array="False" size=""/>
+                            <input variable="szam12"/>
+                            <if expression="szam12=3">
+                                <then>
+                                    <output expression="&quot;L&#233;pj 1-et annak ellen&#233;re hogy 3-mat kapt&#225;l &#233;s teljes&#237;tsd a feladatot!&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;L&#233;pj 1-et annak ellen&#233;re hogy 2-&#246;t kapt&#225;l &#233;s teljes&#237;tsd a feladatot!&quot;" newline="True"/>
+                                </else>
+                            </if>
+                            <output expression="&quot;V&#225;lasz 0 &#233;s 1 k&#246;z&#246;tt&quot;" newline="True"/>
+                            <output expression="&quot;Ha j&#243; v&#225;laszt ad meg akkor 3-mast &#237;rj&#225;l, ha rossz v&#225;laszt ad meg az illet&#337; 2-est &#237;rjon.&quot;" newline="True"/>
+                            <declare name="penzfeldobas21" type="Integer" array="False" size=""/>
+                            <input variable="penzfeldobas"/>
+                            <if expression="penzfeldobas=3">
+                                <then>
+                                    <output expression="&quot;Helyes v&#225;lasz kapsz 1 bet&#252;t!&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Rossz v&#225;lasz nem kapsz bet&#252;t!&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Lej&#225;rt az id&#337;?&quot;" newline="True"/>
+            <declare name="ido20, ido30" type="Integer" array="False" size=""/>
+            <assign variable="ido30" expression="10"/>
+            <input variable="ido2"/>
+            <if expression="ido20&lt;ido30">
+                <then>
+                    <output expression="&quot;Tov&#225;bbi sok sikert!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <do expression="ido20&lt;=ido30">
+                        <input variable="ido30"/>
+                        <output expression="&quot;K&#225;r az id&#337; lej&#225;rt nem mehetsz tov&#225;bb bent ragadt&#225;l &#246;r&#246;kre.VESZTETT&#201;L!!&quot;" newline="True"/>
+                    </do>
+                    <breakpoint expression="" always="True"/>
+                </else>
+            </if>
+            <output expression="&quot;Fej vagy &#205;r&#225;s?&quot;" newline="True"/>
+            <declare name="penzfeldobas23" type="Integer" array="False" size=""/>
+            <input variable="penzfeldobas"/>
+            <if expression="penzfeldobas=3">
+                <then>
+                    <output expression="&quot;L&#233;pj 3-mat&quot;" newline="True"/>
+                    <output expression="&quot;Fej vagy &#205;r&#225;s?&quot;" newline="True"/>
+                    <declare name="penzfeldobas25" type="Integer" array="False" size=""/>
+                    <input variable="penzfeldobas"/>
+                    <if expression="penzfeldobas=3">
+                        <then>
+                            <output expression="&quot;L&#233;pj 3-mat&quot;" newline="True"/>
+                            <output expression="&quot;Fej vagy &#205;r&#225;s?&quot;" newline="True"/>
+                            <declare name="szam006" type="Integer" array="False" size=""/>
+                            <input variable="szam006"/>
+                            <if expression="szam006=3">
+                                <then>
+                                    <output expression="&quot;L&#233;pj 2-&#246;t annak ellen&#233;re hogy 3-mat kapt&#225;l&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;L&#233;pj 2-&#246;t &#233;s teljes&#237;tsd a feladatott&quot;" newline="True"/>
+                                </else>
+                            </if>
+                            <output expression="&quot;Ha j&#243; v&#225;laszt ad meg akkor 3-mast &#237;rj&#225;l, ha rossz v&#225;laszt ad meg az illet&#337; 2-est &#237;rjon.&quot;" newline="True"/>
+                            <declare name="penzfeldobas30" type="Integer" array="False" size=""/>
+                            <input variable="penzfeldobas"/>
+                            <if expression="penzfeldobas=3">
+                                <then>
+                                    <output expression="&quot;Helyes v&#225;lasz kapsz 1 bet&#252;t!&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Rossz v&#225;lasz nem kapsz bet&#252;t!&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;L&#233;pj 2-&#246;t&quot;" newline="True"/>
+                            <output expression="&quot;Fej vagy &#205;r&#225;s?&quot;" newline="True"/>
+                            <declare name="szam06" type="Integer" array="False" size=""/>
+                            <input variable="szam06"/>
+                            <if expression="szam06=3">
+                                <then>
+                                    <output expression="&quot;L&#233;pj 3-mat &#233;s teljes&#237;tsd a feladatott&quot;" newline="True"/>
+                                    <output expression="&quot;Ha j&#243; v&#225;laszt ad meg akkor 3-mast &#237;rj&#225;l, ha rossz v&#225;laszt ad meg az illet&#337; 2-est &#237;rjon.&quot;" newline="True"/>
+                                    <declare name="penzfeldobas29" type="Integer" array="False" size=""/>
+                                    <input variable="penzfeldobas"/>
+                                    <if expression="penzfeldobas=3">
+                                        <then>
+                                            <output expression="&quot;Helyes v&#225;lasz kapsz 1 bet&#252;t!&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Rossz v&#225;lasz nem kapsz bet&#252;t!&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <output expression="&quot;L&#233;pj 2-&#246;t&quot;" newline="True"/>
+                                    <output expression="&quot;Fej vagy &#205;r&#225;s?&quot;" newline="True"/>
+                                    <declare name="szam04" type="Integer" array="False" size=""/>
+                                    <input variable="szam04"/>
+                                    <if expression="szam04=3">
+                                        <then>
+                                            <output expression="&quot;L&#233;pj 1-et annak ellen&#233;re hogy 3-mat kapt&#225;l &#233;s teljes&#237;tsd a feladatot!&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;L&#233;pj 1 annak ellen&#233;re hogy 2-&#246;t kapt&#225;l &#233;s teljes&#237;tsd a feladatot!&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                    <output expression="&quot;Ha j&#243; v&#225;laszt ad meg akkor 3-mast &#237;rj&#225;l, ha rossz v&#225;laszt ad meg az illet&#337; 2-est &#237;rjon.&quot;" newline="True"/>
+                                    <declare name="penzfeldobas34" type="Integer" array="False" size=""/>
+                                    <input variable="penzfeldobas"/>
+                                    <if expression="penzfeldobas=3">
+                                        <then>
+                                            <output expression="&quot;Helyes v&#225;lasz kapsz 1 bet&#252;t!&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Rossz v&#225;lasz nem kapsz bet&#252;t!&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;L&#233;pj 2-&#246;t&quot;" newline="True"/>
+                    <output expression="&quot;Fej vagy &#205;r&#225;s?&quot;" newline="True"/>
+                    <declare name="penzfeldobas24" type="Integer" array="False" size=""/>
+                    <input variable="penzfeldobas"/>
+                    <if expression="penzfeldobas=3">
+                        <then>
+                            <output expression="&quot;L&#233;pj 3-mat&quot;" newline="True"/>
+                            <output expression="&quot;Fej vagy &#205;r&#225;s?&quot;" newline="True"/>
+                            <declare name="szam03" type="Integer" array="False" size=""/>
+                            <input variable="szam03"/>
+                            <if expression="szam03=3">
+                                <then>
+                                    <output expression="&quot;L&#233;pj 3-mat &#233;s teljes&#237;tsd a feladatott&quot;" newline="True"/>
+                                    <declare name="penzfeldobas27" type="Integer" array="False" size=""/>
+                                    <input variable="penzfeldobas"/>
+                                    <output expression="&quot;Ha j&#243; v&#225;laszt ad meg akkor 3-mast &#237;rj&#225;l, ha rossz v&#225;laszt ad meg az illet&#337; 2-est &#237;rjon.&quot;" newline="True"/>
+                                    <if expression="penzfeldobas=3">
+                                        <then>
+                                            <output expression="&quot;Helyes v&#225;lasz kapsz 1 bet&#252;t!&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Rossz v&#225;lasz nem kapsz bet&#252;t!&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <output expression="&quot;L&#233;pj 2-&#246;t&quot;" newline="True"/>
+                                    <output expression="&quot;Fej vagy &#205;r&#225;s?&quot;" newline="True"/>
+                                    <declare name="szam003" type="Integer" array="False" size=""/>
+                                    <input variable="szam003"/>
+                                    <if expression="szam003=3">
+                                        <then>
+                                            <output expression="&quot;L&#233;pj 1-et annak ellen&#233;re hogy 3-mat kapt&#225;l &#233;s teljes&#237;tsd a feladatot!&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;L&#233;pj 1 annak ellen&#233;re hogy 2-&#246;t kapt&#225;l &#233;s teljes&#237;tsd a feladatot!&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                    <output expression="&quot;Ha j&#243; v&#225;laszt ad meg akkor 3-mast &#237;rj&#225;l, ha rossz v&#225;laszt ad meg az illet&#337; 2-est &#237;rjon.&quot;" newline="True"/>
+                                    <declare name="penzfeldobas33" type="Integer" array="False" size=""/>
+                                    <input variable="penzfeldobas"/>
+                                    <if expression="penzfeldobas=3">
+                                        <then>
+                                            <output expression="&quot;Helyes v&#225;lasz kapsz 1 bet&#252;t!&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Rossz v&#225;lasz nem kapsz bet&#252;t!&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;L&#233;pj 2-&#246;t&quot;" newline="True"/>
+                            <output expression="&quot;Fej vagy &#205;r&#225;s?&quot;" newline="True"/>
+                            <declare name="penzfeldobas26" type="Integer" array="False" size=""/>
+                            <input variable="penzfeldobas"/>
+                            <if expression="penzfeldobas=3">
+                                <then>
+                                    <output expression="&quot;L&#233;pj 3-mat&quot;" newline="True"/>
+                                    <output expression="&quot;Fej vagy &#205;r&#225;s?&quot;" newline="True"/>
+                                    <declare name="szam02" type="Integer" array="False" size=""/>
+                                    <input variable="szam02"/>
+                                    <if expression="szam02=3">
+                                        <then>
+                                            <output expression="&quot;L&#233;pj 1-et annak ellen&#233;re hogy 3-mat kapt&#225;l &#233;s teljes&#237;tsd a feladatot!&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;L&#233;pj 1 annak ellen&#233;re hogy 2-&#246;t kapt&#225;l &#233;s teljes&#237;tsd a feladatot!&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                    <output expression="&quot;Ha j&#243; v&#225;laszt ad meg akkor 3-mast &#237;rj&#225;l, ha rossz v&#225;laszt ad meg az illet&#337; 2-est &#237;rjon.&quot;" newline="True"/>
+                                    <declare name="penzfeldobas32" type="Integer" array="False" size=""/>
+                                    <input variable="penzfeldobas"/>
+                                    <if expression="penzfeldobas=3">
+                                        <then>
+                                            <output expression="&quot;Helyes v&#225;lasz kapsz 1 bet&#252;t!&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Rossz v&#225;lasz nem kapsz bet&#252;t!&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <output expression="&quot;L&#233;pj 2-&#246;t&quot;" newline="True"/>
+                                    <output expression="&quot;Fej vagy &#205;r&#225;s?&quot;" newline="True"/>
+                                    <declare name="szam01" type="Integer" array="False" size=""/>
+                                    <input variable="szam01"/>
+                                    <if expression="szam01=3">
+                                        <then>
+                                            <output expression="&quot;L&#233;pj 2-&#246;t annak ellen&#233;re hogy 3-mat kapt&#225;l &#233;s teljes&#237;tsd a feladatot!&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;L&#233;pj 2-&#246;t &#233;s teljes&#237;tsd a feladatot!&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                    <output expression="&quot;Ha j&#243; v&#225;laszt ad meg akkor 3-mast &#237;rj&#225;l, ha rossz v&#225;laszt ad meg az illet&#337; 2-est &#237;rjon.&quot;" newline="True"/>
+                                    <declare name="penzfeldobas31" type="Integer" array="False" size=""/>
+                                    <input variable="penzfeldobas"/>
+                                    <if expression="penzfeldobas=3">
+                                        <then>
+                                            <output expression="&quot;Helyes v&#225;lasz kapsz 1 bet&#252;t!&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Rossz v&#225;lasz nem kapsz bet&#252;t!&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Lej&#225;rt az id&#337;?&quot;" newline="True"/>
+            <declare name="ido200, ido300" type="Integer" array="False" size=""/>
+            <assign variable="ido300" expression="10"/>
+            <input variable="ido200"/>
+            <if expression="ido200&lt;ido300">
+                <then>
+                    <output expression="&quot;Tov&#225;bbi sok sikert!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <do expression="ido200&lt;=ido300">
+                        <input variable="ido300"/>
+                        <output expression="&quot;K&#225;r az id&#337; lej&#225;rt nem mehetsz tov&#225;bb bent ragadt&#225;l &#246;r&#246;kre.VESZTETT&#201;L!!&quot;" newline="True"/>
+                    </do>
+                    <breakpoint expression="" always="True"/>
+                </else>
+            </if>
+            <output expression="&quot;Fej vagy &#205;r&#225;s?&quot;" newline="True"/>
+            <declare name="penzfeldobas35" type="Integer" array="False" size=""/>
+            <input variable="penzfeldobas"/>
+            <if expression="penzfeldobas=3">
+                <then>
+                    <output expression="&quot;L&#233;pj 3-mat&quot;" newline="True"/>
+                    <output expression="&quot;Fej vagy &#205;r&#225;s?&quot;" newline="True"/>
+                    <declare name="szam102" type="Integer" array="False" size=""/>
+                    <input variable="szam102"/>
+                    <if expression="szam102=3">
+                        <then>
+                            <output expression="&quot;L&#233;pj 1-et annak ellen&#233;re hogy 3-mat kapt&#225;l &#233;s v&#233;gezd el a k&#243;ddal el&#225;tott ajt&#243;t!&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;L&#233;pj 1 annak ellen&#233;re hogy 2-&#246;t kapt&#225;l &#233;s v&#233;gezd el a k&#243;ddal el&#225;tott ajt&#243;t!&quot;" newline="True"/>
+                        </else>
+                    </if>
+                    <declare name="szam1, szam2, szam3, szam4, szam5" type="String" array="False" size=""/>
+                    <assign variable="szam1" expression="&quot;semmi&quot;"/>
+                    <assign variable="szam2" expression="&quot;Katica&quot;"/>
+                    <assign variable="szam3" expression="&quot;Persze&quot;"/>
+                    <assign variable="szam4" expression="&quot;Im&#225;dom&quot;"/>
+                    <assign variable="szam5" expression="&quot;Bajusz&quot;"/>
+                    <output expression="&quot;Mi a megfejt&#233;s?&quot;" newline="True"/>
+                    <input variable="szam1"/>
+                    <do expression="szam1!=szam2&amp;&amp;szam1!=szam3&amp;&amp;szam1!=szam4&amp;&amp;szam1!=szam5">
+                        <if expression="szam1&lt;&gt;szam2&amp;&amp;szam1&lt;&gt;szam3&amp;&amp;szam1&lt;&gt;szam4&amp;&amp;szam1&lt;&gt;szam5">
+                            <then>
+                                <output expression="&quot;Nem j&#243; prob&#225;lkozz &#250;jra&quot;" newline="True"/>
+                                <input variable="szam1"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </do>
+                    <output expression="&quot;H&#225;nyadik prob&#225;lkoz&#225;sra siker&#252;lt?&quot;" newline="True"/>
+                    <declare name="probalkozas" type="Integer" array="False" size=""/>
+                    <input variable="probalkozas"/>
+                    <comment text="Ha az adott szem&#233;ly 6 vagy ann&#225;l kisebb prob&#225;lkoz&#225;s alatt tal&#225;lja ki akkor nyert m&#225;sk&#233;pp vesztett!"/>
+                    <if expression="probalkozas&lt;=6">
+                        <then>
+                            <output expression="&quot;Gratul&#225;lok sikeresen kijuttot&#225;l a szob&#225;bb&#243;l NYERT&#201;L!&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Egyes egyed&#252;l halsz meg a szob&#225;bban VESZTETT&#201;l!&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;L&#233;pj 2-&#246;t&quot;" newline="True"/>
+                    <output expression="&quot;Fej vagy &#205;r&#225;s?&quot;" newline="True"/>
+                    <declare name="szam101" type="Integer" array="False" size=""/>
+                    <input variable="szam101"/>
+                    <if expression="szam101=3">
+                        <then>
+                            <output expression="&quot;L&#233;pj 1-et annak ellen&#233;re hogy 3-mat kapt&#225;l &#233;s v&#233;gezd el a k&#243;ddal el&#225;tott ajt&#243;t!&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;L&#233;pj 2-&#246;t &#233;s v&#233;gezd el a k&#243;ddal el&#225;tott ajt&#243;t!&quot;" newline="True"/>
+                        </else>
+                    </if>
+                    <declare name="szam10, szam20, szam30, szam40, szam50" type="String" array="False" size=""/>
+                    <assign variable="szam10" expression="&quot;semmi&quot;"/>
+                    <assign variable="szam20" expression="&quot;Katica&quot;"/>
+                    <assign variable="szam30" expression="&quot;Persze&quot;"/>
+                    <assign variable="szam40" expression="&quot;Im&#225;dom&quot;"/>
+                    <assign variable="szam50" expression="&quot;Bajusz&quot;"/>
+                    <output expression="&quot;Mi a megfejt&#233;s?&quot;" newline="True"/>
+                    <input variable="szam10"/>
+                    <do expression="szam1!=szam2&amp;&amp;szam1!=szam3&amp;&amp;szam1!=szam4&amp;&amp;szam1!=szam5">
+                        <if expression="szam10&lt;&gt;szam20&amp;&amp;szam10&lt;&gt;szam30&amp;&amp;szam10&lt;&gt;szam40&amp;&amp;szam10&lt;&gt;szam50">
+                            <then>
+                                <output expression="&quot;Nem j&#243; prob&#225;lkozz &#250;jra&quot;" newline="True"/>
+                                <input variable="szam10"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </do>
+                    <output expression="&quot;H&#225;nyadik prob&#225;lkoz&#225;sra siker&#252;lt?&quot;" newline="True"/>
+                    <declare name="probalkozas1" type="Integer" array="False" size=""/>
+                    <input variable="probalkozas1"/>
+                    <comment text="Ha az adott szem&#233;ly 6 vagy ann&#225;l kisebb prob&#225;lkoz&#225;s alatt tal&#225;lja ki akkor nyert m&#225;sk&#233;pp vesztett!"/>
+                    <if expression="probalkozas1&lt;=6">
+                        <then>
+                            <output expression="&quot;Ezt t&#250;l EASY volt? Na majd k&#246;vetkez&#337;nek... NYERT&#201;L!&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Sajnos &#246;r&#246;kre bent maradsz VESZTETT&#201;l!&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
